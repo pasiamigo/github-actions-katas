@@ -1,5 +1,10 @@
 name: Main workflow
 on: push
+
+permissions:
+  contents: read
+  statuses: write
+
 jobs:
   Build:
     runs-on: ubuntu-latest
